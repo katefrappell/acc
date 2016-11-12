@@ -1,26 +1,31 @@
 <?php
+ // error_reporting(E_ALL);
+
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	$findout = $_POST['findout'];
 	$enquiry = $_POST['enquiry'];
-	$from = 'From: ACC';
+	$from = 'From: ACC <kate.frappell@manageflitter.com>';
 	$to = 'kate.frappell@gmail.com';
 	$subject = 'Enquiry';
-	$human = $_POST['human'];
+	// $human = $_POST['human'];
 
-	$body = "From: $name\n E-Mail: $email\n Phone:\n $phone Findout:\n $findout Enquiry:\n $enquiry";
+	$body = "From: $name\n E-Mail: $email\n Phone: $phone\n Findout: $findout\n Enquiry: $enquiry\n";
 
-
-	if ($_POST['submit'] && $human == '4'){
-		if (mail ($to, $subject, $body, $from)){
-			echo '<p>Your message has been sent!</p>';
-		} else {
-			echo'<p>Something went wrong! Try again.</p>';
-		}
-} else f ($_POST ['submit'] && $human !='4'){
-	echo '<p>You answered the anti-spam question incorrectly!</p>'
-}
+	if (!empty($name) && !empty($email) && !empty($phone) && !empty($enquiry)) {
+		// if ($human == '4') {
+			if (mail ($to, $subject, $body, $from)){
+				echo '<p>Your message has been sent!</p>';
+			} else {
+				echo'<p>Something went wrong! Try again.</p>';
+			}
+		// } else {
+		// 	echo '<p>You answered the anti-spam question incorrectly!</p>';
+		// }
+	} else {
+		echo '<p>You must fill the required fields.</p>';
+	}
 
 ?>
 
