@@ -1,14 +1,10 @@
+/*nav*/
+
 .navbar ul li {
 margin-bottom:0;
 font-family: 'roboto', sans-serif;
 text-transform:uppercase;
 color:#fff;
-}
-
-.head1 {
-	position: absolute;
-	width: 100%;
-	top: 0;
 }
 
 a.navbar-brand {
@@ -76,6 +72,7 @@ z-index: 2;
 	.navbar, .navbar .sub-menu {background-color: #b11204 !important;}
 }
 
+/*general*/
 
 a{
 color:#fff;
@@ -87,86 +84,6 @@ img {
   	height: auto;
   	border: none;
 }
-
-.section1{
-	width:100%;
-	height:40em;
-/*	padding-top:15em;*/
-	/*padding-bottom:20em;*/
-	background-image: url('../images/acc_home_banner.png');
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.main-header h1{
-	color:#fff;
-	font-size:45px;
-	margin-top:2em;
-	/*border: 3px #fff solid;*/
-	/*padding:10px;*/
-}
-
-.main-header .button{
-	width:20%;
-	min-width:250px;
-	background-color: #b11204;
-	color:#fff;
-	font-family:'roboto', sans-serif;
-	font-size: 25px;
-	margin: 0;
-	text-transform:uppercase;
-	padding-top:0.5em;
-	height:2.5em;
-}
-
-.main-header .button:hover{
-	background-color: #a0251c;
-	width:20%;
-	min-width:250px;
-	color:#fff;
-	font-family:'roboto', sans-serif;
-	font-size: 25px;
-	margin: 0;
-	text-transform:uppercase;
-	padding-top:0.5em;
-	height:2.5em;
-	
-}
-
-.main-header{	
-	margin: 0 auto;
-/*	width: 40%;*/
-	color: #ffffff;
-	font-family: 'Oswald', sans-serif;
-	font-weight:100;
-	text-transform: uppercase;
-	font-size:3em;
-	text-align:center;
-	vertical-align:center;
-}
-
-.main-header img{
-	height:90px; 
-	width:370px; 
-	min-width:320px; 
-	max-width:370px;
-	/*position:absolute;*/
-}
-
-.head1 {
-	position: absolute;
-	width: 100%;
-	top: 0;
-}
-
-/*@media (min-width:  1068px) {
-	.main-header img {position: absolute;}
-}
-@media (max-width:  1068px) {
-	.main-header img {margin-top:200px;}
-}*/
-
 
 h2{
 	font-family: 'Oswald', sans-serif;
@@ -203,14 +120,113 @@ nav{
 	
 }
 
-.logo {
-	position:absolute;
-	width:100px;
-	height:45px;
-	top:10px;
-	left:30px;
-	float: left;
-	border: 2px #fff solid;
+.button{
+	width:120px;
+	height:40px;
+	color:#fff;
+	text-align: center;
+	vertical-align:middle;
+	line-height:40px;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	text-transform: uppercase;
+	border-radius:40px;
+	display:inline-block;
+	margin-top:2em;
+ }
+
+ .button a:hover{
+ 	color:#fff;
+ }
+
+/*Home Header*/
+
+.section1{
+	width:100%;
+	height:40em;
+/*	padding-top:15em;*/
+	/*padding-bottom:20em;*/
+	background-image: url('../images/acc_home_banner.png');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-header{	
+	margin: 0 auto;
+/*	width: 40%;*/
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	font-weight:100;
+	text-transform: uppercase;
+	font-size:3em;
+	text-align:center;
+	vertical-align:center;
+}
+
+.main-header h1{
+	color:#fff;
+	font-size:45px;
+	margin-top:2em;
+	/*border: 3px #fff solid;*/
+	/*padding:10px;*/
+}
+
+.main-header .button{
+	width:20%;
+	min-width:250px;
+	background-color: #b11204;
+	color:#fff;
+	font-family:'roboto', sans-serif;
+	font-size: 25px;
+	margin: 0;
+	text-transform:uppercase;
+	padding-top:0.5em;
+	height:2.5em;
+	border-radius:40px;
+}
+
+.main-header .button:hover{
+	background-color: #a0251c;
+	width:20%;
+	min-width:250px;
+	color:#fff;
+	font-family:'roboto', sans-serif;
+	font-size: 25px;
+	margin: 0;
+	text-transform:uppercase;
+	padding-top:0.5em;
+	height:2.5em;
+	
+}
+
+.main-header img{
+	height:90px; 
+	width:370px; 
+	min-width:320px; 
+	max-width:370px;
+	/*position:absolute;*/
+}
+
+.head1 {
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
+/*HOME - What we do*/
+
+.section2{
+	background-color:#fff;
+	width:100%;
+	padding-top:4em;
+	padding-bottom:2em;
+	margin: 0 auto;
+
+}
+
+.service{
+	margin-bottom:40px;
 }
 
 .service img{
@@ -218,10 +234,6 @@ nav{
 	display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.service{
-	margin-bottom:40px;
 }
 
 .service h2{
@@ -236,15 +248,6 @@ nav{
 	text-transform:uppercase;
 }
 
-
-.section2{
-	background-color:#fff;
-	width:100%;
-	padding-top:4em;
-	padding-bottom:2em;
-	margin: 0 auto;
-
-}
 .clearfix:before, .clearfix:after {
     content: " ";
     display: block;
@@ -253,7 +256,20 @@ nav{
     clear: both;
 }
 
-.about_image{
+/*HOME - ticks + image*/
+
+.section3{
+/*	position: absolute;*/
+	background-image:url('../images/acc_home_banner.png');
+	background-size: cover;
+	background-position: center;
+	/*background-color:#f6f6f6;*/
+	width:100%;
+	padding-top:5em;
+	margin-bottom:5em;
+}
+
+.tick-text-image{
 	background-image: url('../images/acc_coffee_image.jpg');
 	background-size:cover;
 	background-position: center;
@@ -266,11 +282,6 @@ nav{
 .tick_text{
 	margin-bottom:2.5em;
 	margin-left:2em;
-	color:#fff;
-}
-
-.about-text h2{
-	margin-bottom:3em;
 	color:#fff;
 }
 
@@ -287,119 +298,25 @@ nav{
 	color:#fff;
 }
 
-.button{
-	width:120px;
-	height:40px;
-	color:#fff;
-	text-align: center;
-	vertical-align:middle;
-	line-height:40px;
-/*	margin-left: auto;
-	margin-right: 20px;*/
-	/*margin-bottom: 20px;*/
-	font-family: 'Roboto', sans-serif;
-	font-size:14px;
-	text-transform: uppercase;
-	border-radius:40px;
-	/*border:1px solid #000;*/
-	display:inline-block;
-	margin-top:2em;
-	background-color: #66ffcc;
- }
+/*HOME - testimonials*/
 
- .about_text .button{
- 	width:120px;
-	height:40px;
-	color:#fff;
-	text-align: center;
-	vertical-align:middle;
-	line-height:40px;
-/*	margin-left: auto;
-	margin-right: 20px;*/
-	/*margin-bottom: 20px;*/
-	font-family: 'Roboto', sans-serif;
-	font-size:14px;
-	text-transform: uppercase;
-	border-radius:40px;
-/*	border:1px solid #000;*/
-	display:inline-block;
-	margin-top:2em;
-	margin-right:2em;
- }
-
-.button:hover{
- 	background-color:#5ee8ba;
- }
-
- .button a:hover{
- 	color:#fff;
- }
-
- .btn-default {
- 	text-shadow:none;
- 	border-color:none;
- }
-
- .btn {
-    display: inline-block;
-    color:#fff;
-    text-transform: uppercase;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    background-color:#66ffcc;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    width: 60%;
-    vertical-align: center;
-}
-
-#dropdownMenu1{
-	background-color:#66ffcc !important;
-	border: 1px solid transparent;
-	color:#fff;
-	font-family:'roboto', sans-serif;
-}
-
-#dropdownMenu1:hover{
-	background-color:#5ee8ba !important;
-	border: 1px solid transparent;
-	color:#fff;
-}
-
-.section3{
-/*	position: absolute;*/
-	background-image:url('../images/acc_home_banner.png');
-	background-size: cover;
-	background-position: center;
-	/*background-color:#f6f6f6;*/
-	width:100%;
-	padding-top:5em;
-	margin-bottom:5em;
+.section4{
+	margin: 0 auto; 
+	height:auto;
 }
 
 .my-slider{
-	margin-left:7em; 
-	margin-right:7em;"
+	margin-left:5em; 
+	margin-right:5em;
 }
 
 .my-slider ul li{
 	text-align:center;
 	margin: auto;
 }
+
+/* HOME - referral*/
+
 
 .section5{
 	background-color: #B11204;
@@ -455,9 +372,9 @@ nav{
 	background-color: #a0251c;
  }
 
+ /*HOME - send us a message*/
 
-
-.section4 {
+.section6 {
 	
 	background-image: url('../images/acc_home_banner.png');
 	background-color:#f3f3f3;
@@ -506,6 +423,8 @@ input{
 	color:#fff;
 }
 
+/*HOME - footer*/
+
 
 .footer{
 background-color: #000;
@@ -553,7 +472,6 @@ margin: 0 auto;
 
 }
 
-
  .footer2 p a:link a:visited a:active{
 	text-decoration: none;
 	color:#fff;
@@ -568,7 +486,7 @@ margin: 0 auto;
 	color:#fff;
 }
 
-/*About*/ 
+/*ABOUT*/ 
 
 .section1_about{
 	width:100%;
@@ -579,7 +497,6 @@ margin: 0 auto;
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom:4em;
 }
 
 .about-header{
@@ -604,6 +521,10 @@ margin: 0 auto;
 	margin-bottom:6em;
 }
 
+.about-text{
+	margin-top:56px;
+}
+
 .member-of{
 	text-align:center;
 	margin-bottom:5em;
@@ -626,13 +547,27 @@ margin: 0 auto;
 	height:auto;
 }
 
-hr{
-	width:100%;
-	border: 1px solid #000;
-	/*margin-left:15px;
-	margin-right:15px;*/
-	margin-top:3em;
+.about-clients{
+	background-color:#b11204;
 }
+
+.about-testimonials-heading h2{
+	color:#fff;
+	margin-top:2em;
+}
+
+.about-testimonials{
+	color:#fff;
+	margin-bottom:4em;
+}
+
+.footer-about{
+background-color: #000;
+width: 100%;
+height:auto;
+margin-top:56px;
+}
+
 
 /*PRODUCTS*/
 
@@ -643,19 +578,15 @@ hr{
 }
 
 .product{
-	margin-bottom:4em;
+	margin-top:56px;
 }
 
-.product img{
-	margin-bottom:1em;
+/*CONTACT*/
 
+.form{
+	margin-top:5em;
+	margin-bottom:5em;
 }
-.product-even{
-	margin-bottom:4em;
-	background-color: #d8d8d8;
-}
-
-/*contact*/
 
 .contact_container{
 	background-color:#b11204;
@@ -664,7 +595,6 @@ hr{
 
 .contact_container h2{
 	color:#fff;
-	margin-bottom:0.4em;
 }
 
 .contact_container p{
@@ -673,12 +603,13 @@ hr{
 }
 
 .form-header{
-	padding:1.5em;
+	padding-left:2em;
+	padding-top:1.8em;
 }
 
-.chat-header h2{
-	margin-top:1.3em;
-	margin-bottom:0.5em;
+.chat-header{
+	margin-top:5em;
+	margin-bottom: 2em;
 }
 
 .contact_container #submit-button {
@@ -699,138 +630,8 @@ hr{
 	color:#fff;
 }
 
-
-/*PAGE 2*/
-
-.section1-2{
-	width:100%;
-	height:25em;
-/*	padding-top:15em;*/
-	padding-bottom:20em;
-	background-image:url('../images/banner_home6.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.main-header-2{
-	margin: 1em 0 auto;
-	width: 100%;
-	color: #ffffff;
-	font-family: 'Oswald', sans-serif;
-	font-weight:100;
-	text-transform: uppercase;
-	font-size:3em;
-	text-align:center;
-}
-
-.about-2{
-	margin-top:3.5em;
+form #contact-submit .contact_container{
+	margin-top:0px !important;
 }
 
 
-#content p{
-  color:#000;
-  height:3em;
-  margin: 0 auto;
-  text-align: left;
-  padding:1em;
-  font-family:'roboto', sans-serif;
-}
-
-#content h2{
-  background-color:#fff;
-  color:#000;
-  margin: 0 auto;
-  border-bottom: 1px solid #000;
-  height: auto;
-  padding:0.7em 0 0.7em 0;
-  text-align: left;
-  font-family: 'roboto', sans-serif;
-  font-size: 20px;
-}
-
-p #answer1{
-  background-color: #fff;
-  color:#000;
-}
-
-
-.gallery{
-	margin-top:3.5em;
-	text-transform: uppercase;
-}
-
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	}
-
-.mosaicflow__column {
-	float:left;
-	}
-
-.mosaicflow__item {
-	position:relative;
-	}
-	.mosaicflow__item img {
-		display:block;
-		width:100%;
-		max-width:500px;
-		height:auto;
-		border: 1px solid #fff;
-		}
-
-.mosaicflow__item p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 5px;
-    background: hsla(0,0%,0%,.5);
-    color: #fff;
-    font-size: 14px;
-    text-shadow: 1px 1px 1px hsla(0,0%,0%,.75);
-    opacity: 0;
-    -webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-    -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-    -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-    transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-}
-
-.mosaicflow__item:hover p {
-		opacity:1;
-		}
-
-
-
-.pull-quote-background{
-	
-/*	position: relative;*/
-	width:100%;
-	height:20em;
-/*	padding-top:15em;*/
-	/*padding-bottom:20em;*/
-    margin-top: 5.5em;
-    background-image: url('../images/banner_home5.jpg');
-}
-
-.pullquote{
-	width: 80%;
-/*	height:60%;*/
-	margin: 0 auto;
-	padding-top:10%;
-	text-align: center;
-	/*position:relative;*/
-}
-
-.pullquote h3{
-	font-family:'roboto', sans-serif;
-	color:#fff;
-}
-
-.pullquote h2 {
-	margin: auto;
-	color:#fff;
-}

@@ -332,7 +332,7 @@
 
 						if((Math.abs(e.distX) / width) > self.options.swipeThreshold) {
 
-							self[e.distX < 0 ? 'next' : 'prev']();
+							self[e.distX < 0 ? '>' : '<']();
 						}
 						else {
 
