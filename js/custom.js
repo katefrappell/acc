@@ -16,7 +16,8 @@ $(document).ready(function(){
 
 
 	$('.my-slider').unslider({
-		autoplay: true
+		autoplay:true,
+		delay:10000
 	});
 
 
