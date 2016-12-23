@@ -69,7 +69,8 @@ z-index: 2;
 	.navbar {background-color: transparent !important;}
 }
 @media (max-width:  1068px) {
-	.navbar, .navbar .sub-menu {background-color: #b11204 !important;}
+	.navbar, .navbar .sub-menu {background-color: transparent !important;}
+	/*{background-color: #b11204 !important;} 1068*/
 }
 
 /*general*/
@@ -116,8 +117,11 @@ p{
 
 nav{
 	position:absolute;
-	width:100%;
-	
+	width:100%;	
+}
+
+body{
+	margin: 0 auto;
 }
 
 .button{
@@ -143,7 +147,7 @@ nav{
 
 .section1{
 	width:100%;
-	height:40em;
+	height:20em;
 /*	padding-top:15em;*/
 	/*padding-bottom:20em;*/
 	background-image: url('../images/acc_home_banner.png');
@@ -173,8 +177,9 @@ nav{
 }
 
 .main-header .button{
-	width:20%;
-	min-width:250px;
+	width:40%;
+	/*max-width:250px;*/
+	min-width:365px;
 	background-color: #b11204;
 	color:#fff;
 	font-family:'roboto', sans-serif;
@@ -188,8 +193,9 @@ nav{
 
 .main-header .button:hover{
 	background-color: #a0251c;
-	width:20%;
-	min-width:250px;
+	width:40%;
+	/*max-width:250px;*/
+	min-width:365px;
 	color:#fff;
 	font-family:'roboto', sans-serif;
 	font-size: 25px;
@@ -201,10 +207,11 @@ nav{
 }
 
 .main-header img{
-	height:90px; 
-	width:370px; 
-	min-width:320px; 
-	max-width:370px;
+/*	height:90px;*/ 
+	width:70%; 
+	min-width:333px; 
+	max-width:50%;
+	vertical-align: 0;
 	/*position:absolute;*/
 }
 
@@ -222,7 +229,6 @@ nav{
 	padding-top:4em;
 	padding-bottom:2em;
 	margin: 0 auto;
-
 }
 
 .service{
@@ -490,7 +496,7 @@ margin: 0 auto;
 
 .section1_about{
 	width:100%;
-	height:25em;
+	height:35em;
 /*	padding-top:15em;*/
 	/*padding-bottom:20em;*/
 	background-image: url('../images/acc_home_banner.png');
